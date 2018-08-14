@@ -1,3 +1,4 @@
+// <script type="text/javascript">
 var wins = 0;
 var losses = 0;
 var guessesLeft = 10;
@@ -40,5 +41,7 @@ document.onkeyup = function(event) {
     "</p>"
     ;
     // Placing the html into the game ID
-    document.querySelector('#game').innerHTML = html;
+   // document.querySelector('#game').innerHTML = html;
+
+   document.querySelector('#game').innerHTML = html;
 }
