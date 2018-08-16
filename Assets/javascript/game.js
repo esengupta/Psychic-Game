@@ -17,6 +17,8 @@ document.onkeyup = function(event) {
     }
     else if (guessesLeft == 0){
         losses++;
+        // sound = new Audio("myAudio.mp3");
+        // myAudio.play();
         alert('You didn\'t guess the correct letter. You lost. Let\'s try again.');
         guessesLeft = 10;
         guessesSoFar.length = 0;
@@ -40,8 +42,9 @@ document.onkeyup = function(event) {
     guessesSoFar +
     "</p>"
     ;
-    // Placing the html into the game ID
-   // document.querySelector('#game').innerHTML = html;
 
-   document.querySelector('#game').innerHTML = html;
+    // Placing the html into the game ID
+    document.querySelector('#game').innerHTML = html;
+
+  
 }
